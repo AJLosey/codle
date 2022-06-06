@@ -8,6 +8,12 @@ const wordSchema = new Schema(
             trim: true,
             unique: true,
         },
+        highScore: {
+            type: Number
+        },
+        highScoreName: {
+            type: String
+        },
         comments: [
             {
                 type: Schema.Types.ObjectId,
